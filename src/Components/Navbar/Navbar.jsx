@@ -10,7 +10,7 @@ const Navbar = () => {
 
             <a href="/" className='navbar-link'><li>Accueil</li></a>
             
-            <a href="#" className='navbar-link'><li>Explorer</li></a>
+            <a href="/explorer" className='navbar-link'><li>Explorer</li></a>
 
             <a href="#" className='navbar-link'><li>A propos</li></a>
             
