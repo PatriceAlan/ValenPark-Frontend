@@ -1,9 +1,8 @@
 import './Background.css'
 import video1 from '../../assets/video1.mp4'
-import image1 from '../../assets/image1.png'
+import image1 from '../../assets/image1.jpg'
 import image2 from '../../assets/image2.png'
-import image3 from '../../assets/image3.png'
-import image4 from '../../assets/image4.jpg'
+import image3 from '../../assets/image3.jpg'
 
 const Background = ({playStatus,heroCount}) => {
 
@@ -27,11 +26,6 @@ const Background = ({playStatus,heroCount}) => {
     else if (heroCount === 2) {
         return (
             <img src={image3} className='background fade-in'/>
-        )
-    }
-    else if (heroCount === 3) {
-        return (
-            <img src={image4} className='background fade-in'/>
         )
     }
     

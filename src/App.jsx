@@ -5,10 +5,9 @@ import Hero from "./Components/Hero/Hero";
 
 const App = () => {
   let heroData = [
-    {text1:"Dive into", text2:"what you love"},
-    {text1:"Indulge", text2:"your passions"},
-    {text1:"Give in to", text2:"your desires"},
-    {text1:"Satisfy", text2:"your cravings"}
+    {text1:"Votre Compagnon de parking", text2:"fiable et efficace"},
+    {text1:"Trouvez votre place de parking", text2:"en un clic"},
+    {text1:"Gagnez du temps et economisez de l'argent", text2:"avec ValenPark !"}
   ]
 
   const [heroCount, setHeroCount] = useState(0);

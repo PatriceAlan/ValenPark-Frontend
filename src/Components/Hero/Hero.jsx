@@ -12,8 +12,8 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
       </div>
 
       <div className="hero-explore">
-        <p>Explore the features</p>
-        <img src={arrow_btn} alt="" />
+        <p>Reservez maintenant !</p>
+        <a href="#"><img src={arrow_btn} alt="" /></a>
 
       </div>
 
@@ -22,12 +22,11 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
           <li className={heroCount === 0 ? 'hero-dot orange' : 'hero-dot'} onClick={() => setHeroCount(0)}></li>
           <li className={heroCount === 1 ? 'hero-dot orange' : 'hero-dot'} onClick={() => setHeroCount(1)}></li>
           <li className={heroCount === 2 ? 'hero-dot orange' : 'hero-dot'} onClick={() => setHeroCount(2)}></li>
-          <li className={heroCount === 3 ? 'hero-dot orange' : 'hero-dot'} onClick={() => setHeroCount(3)}></li>
         </ul>
         
         <div className="hero-play">
           <img onClick={()=> setPlayStatus(!playStatus)} src={playStatus?pause_icon:play_icon} alt="" />
-          <p>See the video</p>
+          <p>Voir la video</p>
         </div>
       </div>
 
