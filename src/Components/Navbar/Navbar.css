@@ -13,6 +13,10 @@
     font-weight: 500;
 }
 
+.nav-logo:hover{
+    color: #2497F3;
+}
+
 .nav-menu{
     display: flex;
     align-items: center;

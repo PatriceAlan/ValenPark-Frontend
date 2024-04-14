@@ -40,6 +40,15 @@
     justify-content: space-between;
     cursor: pointer;
 }
+.hero-play{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 60px;
+    background-color: #2497F3;
+    cursor: pointer;
+}
 
 .hero-play p{
     color: #fff;
@@ -62,6 +71,6 @@
 }
 
 .hero-dot.orange{
-    background: orangered;
+    background: #2497F3;
 }
 
