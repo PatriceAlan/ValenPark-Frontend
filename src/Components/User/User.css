@@ -1,0 +1,72 @@
+.user-background{
+    background-color: #d0d0d0d0;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000; 
+    color: #fff; 
+    width: 250px; 
+    height: 1080px; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+  }
+  .logo a:hover {
+    color: #2497f3;
+  }
+  .logo a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    padding: 20px 0;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .item img{
+    margin: 10px 20px;
+  }
+  
+  
+  .item:hover {
+    background-color: #2497f3;
+    border-radius: 5px;
+  }
+
+  .user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  
+.user-reservations{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+margin-left: 300px;
+}
+.user-paiements
+{display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+margin-left: 300px;
+}
