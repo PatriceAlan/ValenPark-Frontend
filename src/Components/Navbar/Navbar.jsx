@@ -1,25 +1,37 @@
-import './Navbar.css';
+import "./Navbar.css";
 
 const Navbar = () => {
-    return (
-      <div className="nav">
+  return (
+    <div className="nav">
+      <div className="nav-container">
+        <a href="/" className="nav-logo">
+          ValenPark
+        </a>
+        <ul className="nav-menu">
+          <li>
+            <a href="/" className="navbar-link">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a href="/explorer" className="navbar-link">
+              Explorer
+            </a>
+          </li>
+          <li>
+            <a href="#" className="navbar-link">
+              A propos
+            </a>
+          </li>
+          <li>
+            <a href="/connexion" className="navbar-connexion">
+              Connexion
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-      <div className="nav-logo">ValenPark </div>
-
-          <ul className="nav-menu">
-
-            <a href="/" className='navbar-link'><li>Accueil</li></a>
-            
-            <a href="/explorer" className='navbar-link'><li>Explorer</li></a>
-
-            <a href="#" className='navbar-link'><li>A propos</li></a>
-            
-            <a href="#" className='nav-connexion'><li>Connexion</li></a>
-          </ul>
-      
-     </div>
-      
-    )
-  }
-  
-  export default Navbar;
+export default Navbar;

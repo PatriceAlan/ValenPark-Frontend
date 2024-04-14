@@ -13,7 +13,7 @@ const Hero = ({heroData, setHeroCount, heroCount, setPlayStatus, playStatus}) =>
 
       <div className="hero-explore">
         <p>Reservez maintenant !</p>
-        <a href="#"><img src={arrow_btn} alt="" /></a>
+        <a href="/connexion"><img src={arrow_btn} alt="" /></a>
 
       </div>
 
