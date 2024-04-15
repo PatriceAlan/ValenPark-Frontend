@@ -1,10 +1,17 @@
-
+import Parkings from '../Parkings/Parkings';
 import React from 'react';
 
 const Reservations = () => {
     return (
         <div className='user-reservations'>
-            <h1>Réservations</h1>
+            <div className='reservations-title'>
+                <h1>Réservations</h1>
+            </div>
+            <div className='reservations-reserver'>
+                <a href="/parkings"><button type="button" className="btn btn-primary">Reserver une place de parking</button></a>
+            
+            </div>
+            
             <div className="container mt-4">
                 <div className="card mb-4">
                     <div className="card-body">
@@ -19,8 +26,11 @@ const Reservations = () => {
                                 <p className="card-text"><strong>Prix :</strong> 1€</p>
                             </div>
                         </div>
+                        <br />
+                        <button type="button" className="btn btn-warning">Modifier la reservation</button>
                     </div>
                 </div>
+                
             </div>
         </div>
     );
