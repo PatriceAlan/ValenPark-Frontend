@@ -45,7 +45,7 @@ const Inscription = () => {
                         </div>
                     </div>
                     <div className="submit-container">
-                        <div className="submit">S'inscrire</div>
+                        <button className="submit">S'inscrire</button>
                         <div className="submit gray" onClick={redirectToConnexion}>Se connecter</div>
                     </div>
                 </div>

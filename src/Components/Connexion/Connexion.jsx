@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Connexion.css';
 import Navbar from "../Navbar/Navbar";
 import email from '../../assets/email.png';
-import motDePasse from '../../assets/password.png'; // Renommez la variable à 'motDePasse'
+import motDePasse from '../../assets/password.png';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
@@ -12,7 +12,7 @@ const Connexion = () => {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         const email = event.target.elements.email.value;
-        const motDePasse = event.target.elements.motDePasse.value; // Utilisez 'motDePasse' ici
+        const motDePasse = event.target.elements.motDePasse.value; 
 
         try {
             const response = await axios.post('http://localhost:8081/users/connexion', {
@@ -43,17 +43,17 @@ const Connexion = () => {
                     <div className="inputs">
                         <div className="input">
                             <img src={email} alt="" />
-                            <input type="text" name="email" placeholder="Email" /> {/* Ajoutez le nom 'email' ici */}
+                            <input type="text" name="email" placeholder="Email" />
                         </div>
                         <div className="input">
                             <img src={motDePasse} alt="" />
-                            <input type="password" name="motDePasse" placeholder="Mot de passe" /> {/* Ajoutez le nom 'motDePasse' ici */}
+                            <input type="password" name="motDePasse" placeholder="Mot de passe" />
                         </div>
                     </div>
                     <div className="forgot-password">Mot de passe oublié ? <span>Cliquer ici !</span></div>
                     <div className="submit-container">
                         <div className="submit gray" onClick={redirectToInscription}>S'inscrire</div>
-                        <button type="submit" className="submit">Se connecter</button> {/* Changez le div en button */}
+                        <button className="submit">Se connecter</button>
                     </div>
                 </div>
             </form>
