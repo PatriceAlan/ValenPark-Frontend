@@ -9,6 +9,16 @@ import parking from '../../assets/parking.png';
 
 const User = () => {
     const [selectedOption, setSelectedOption] = useState('profil');
+    const [userId, setUserId] = useState(null);
+
+    useEffect(() => {
+        const userIdFromStorage = localStorage.getItem('userId');
+        if (userIdFromStorage) {
+            setUserId(userIdFromStorage);
+        } else {
+            console.log("Identifiants incorrects");
+        }
+    }, []);
 
     const handleProfileClick = () => {
         setSelectedOption('profil');
@@ -18,7 +28,7 @@ const User = () => {
         setSelectedOption('reservations');
     };
 
-    const handlePaymentsClick = () => {
+    const handlePaiementsClick = () => {
         setSelectedOption('paiements');
     };
 
@@ -39,7 +49,7 @@ const User = () => {
                     <div className="menu">
                         <div className="item" onClick={handleProfileClick}> <img src={person} alt="Profile" />Profil</div>
                         <div className="item" onClick={handleReservationsClick}> <img src={parking} alt="Reservations" />Réservations</div>
-                        <div className="item" onClick={handlePaymentsClick}> <img src={payment} alt="Payments" />Paiements</div>
+                        <div className="item" onClick={handlePaiementsClick}> <img src={payment} alt="Paiements" />Paiements</div>
                     </div>
                 </div>
             </div>
