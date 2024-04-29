@@ -6,6 +6,7 @@ import Connexion from "./Components/Connexion/Connexion";
 import Inscription from "./Components/Inscription/Inscription";
 import User from "./Components/User/User";
 import Parkings from "./Components/User/Parkings/Parkings";
+import Apropos from "./Components/Apropos/Apropos";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/user" element={<User />} />
         <Route path='/parkings' element={<Parkings />} />
+        <Route path='/apropos' element={<Apropos />} />
       </Routes>
     </Router>
   );

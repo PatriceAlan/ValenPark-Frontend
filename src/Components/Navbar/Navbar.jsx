@@ -19,7 +19,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="navbar-link">
+            <a href="/apropos" className="navbar-link">
               A propos
             </a>
           </li>
